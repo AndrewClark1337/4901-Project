@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    }
+    
+h1 {
+    color: #00853E;
+}
+
+body, html{
+  height: 100%;
+  width: 90%;
+  font-family: Arial;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+}
+input
+{
+    margin: 10px;
+    padding: 4px 12px;
+    border: 3px solid  #00853E;
+    
+}
+.LogoutYes,.LogoutNo {
+    margin: auto;
+    text-align: center;
+    background-color: #00853E;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+}
+.submit
+{
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+    background-color: #00853E;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+.col 
+{
+   float: left  
+}
+.Places
+{
+ height: 100%;
+}
+#cat
+{
+    margin: auto;
+    width: 30%; 
+    padding: 30px;
+    border: 2px solid black;
+}
+#list
+{
+    
+    margin: auto;
+    padding: 30px;
+    width: 60%;
+    border: 2px solid black;
+  
+}
+.place
+{
+
+    background-color: #00853E;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin: 30px 0px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}

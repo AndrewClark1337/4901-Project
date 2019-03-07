@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="4901main.css"/>
+
+</head>
+<body>
+    <div>
+        <h1>UNT Gradbook</h1>
+    </div>
+    <button class="tablink" onclick="openPage('Profile', this, '#00853E')">Profile</button>
+    <button class="tablink" onclick="openPage('Maps', this, '#00853E')">Maps</button>
+    <button class="tablink" onclick="openPage('Places', this, '#00853E')"id="defaultOpen">Places</button>
+    <button class="tablink" onclick="openPage('Logout', this, '#00853E')">Logout</button>
+
+    <div id="Profile" class="tabcontent">
+        <h2>Profile</h2>
+          <img src="https://northtexan.unt.edu/sites/default/files/2013_fall_mean-green-scrappy_large.jpg" height = "200" width = "178 " alt="Subscribe to Pewdiepie">
+        <br>
+       About Me  
+        <TEXTAREA Name="content" ROWS="10" COLS="60"></TEXTAREA><br>
+        Name
+        <input type= "text" align="center" required><br>
+        Birthday
+        <input type= "text" align="center" required><br>
+        E-mail
+        <input type= "text" align="center" required><br>
+        Phone 
+        <input type= "text" align="center" required><br><br>
+        <button class="submit">Save Profile</button>
+    </div>
+
+    <div id="Maps" class="tabcontent">
+        <h2>Maps</h2>
+        <div  id="Maps2">
+            <button class="place">Campus</button>
+            <button class="place">Restaurants</button>
+            <button class="place">Entertainment</button>
+            <button class="place">Lodging</button>
+        </div>
+    </div>
+
+    <div id="Places" class="tabcontent">
+        <h2>Places</h2><br><br>
+        <div class="cat" id="col" style="float:left">
+            <button class="place">Campus</button><br>
+            <button class="place">Restaurants</button><br>
+            <button class="place">Entertainment</button><br>
+            <button class="place">Lodging</button><br>
+        </div>
+        <div class="list" id="col" style="float:left">
+            <img src="https://northtexan.unt.edu/sites/default/files/2013_fall_mean-green-scrappy_large.jpg" height = "400" width = "356 " alt="Subscribe to Pewdiepie">
+        </div>
+    </div>
+
+    <div id="Logout" class="tabcontent">
+        <h2>Are you sure you want to log out?</h2>
+        <button class="LogoutYes">Yes</button><br>
+        <button class="LogoutNo"> No </button>
+    </div>
+
+    <script>
+    function openPage(pageName,elmnt,color) 
+    {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) 
+        {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) 
+        {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+</body>
+</html> 
